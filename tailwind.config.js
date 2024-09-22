@@ -1,11 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    "./src/**/*.{js,jsx,ts,tsx}", // Adjust based on your project structure
   ],
   theme: {
-   
-    extend: {},
+    extend: {
+      fontFamily: {
+        rancho: ['"Rancho"', "cursive"],
+        raleway: ['"Raleway"', "sans-serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };
